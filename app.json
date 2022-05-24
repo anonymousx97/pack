@@ -10,7 +10,7 @@
 			"description": "Mongodb url from https://cloud.mongodb.com/, guide: https://del.dog/mongodb_guide"
 		},
 		"PRIVATE_REPO": {
-			"description": "ask Ryuk"
+			"description": "https://git_username:git_token@github.com/VenomXuserbot/VenomX_team"
 		},
 		"HEROKU_APP_NAME": {
 			"description": "Given app name to the Heroku App"
