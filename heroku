@@ -16,53 +16,12 @@
 
 
 # error precaution.
-set -e
-
-WORK_DIR="userbot"
-mkdir -p $WORK_DIR
-
-disp () {
-    echo "-----> $*"
-}
-
-indent () {
-    sed -u 's/^/       /'
-}
-
-_done () {
-    echo -e "Done\n" | indent
-}
-
-_displaylogo () {
-    echo '
-===========================================
-
-  ▄████  ██▓███   ▄▄▄       ▄████▄   ██ ▄█▀
- ██▒ ▀█▒▓██░  ██▒▒████▄    ▒██▀ ▀█   ██▄█▒ 
-▒██░▄▄▄░▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ▓███▄░ 
-░▓█  ██▓▒██▄█▓▒ ▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄ 
-░▒▓███▀▒▒██▒ ░  ░ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄
- ░▒   ▒ ▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒
-  ░   ░ ░▒ ░       ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░
-░ ░   ░ ░░         ░   ▒   ░        ░ ░░ ░ 
-      ░                ░  ░░ ░      ░  ░   
-                           ░               
-===========================================
-|            VERSION  v0.1.0              |
-|    By: @midnightmadwalk and code-rgb    |
-|           (C) 2021 - USERGE-X           |
-===========================================
-'
-}
 
 _setup_repo () {
     local repo_path
-    git clone $UPSTREAM_REPO Venom
+    git clone $UPSTREAM_REPO Venom-X
 }
 _startbot () {
-    local bot_dir
-    bot_dir=$(cd Venom $ && ls) && mv "Venom/$bot_dir" "Venom-X"
-    rm -rf $WORK_DIR
     cd "Venom-X"
     git init > /dev/null 2>&1
     echo -e ">><< --- >><<  Starting [X]  >><< --- >><<\n" | indent
@@ -70,8 +29,6 @@ _startbot () {
 }
 
 begin_x () {
-    _displaylogo
-    sleep 5
     _setup_repo
     _startbot
 }
