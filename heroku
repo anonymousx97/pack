@@ -55,10 +55,13 @@ _displaylogo () {
 '
 }
 
-_setup_repo () {git clone ${UPSTREAM_REPO} Venom-X}
+_setup_repo () {
+    local repo_path
+    git clone $UPSTREAM_REPO Venom
+}
 _startbot () {
     local bot_dir
-    bot_dir=$(cd $WORK_DIR && ls) && mv "$WORK_DIR/$bot_dir" "Venom-X"
+    bot_dir=$(cd Venom $ && ls) && mv "Venom/$bot_dir" "Venom-X"
     rm -rf $WORK_DIR
     cd "Venom-X"
     git init > /dev/null 2>&1
