@@ -28,7 +28,7 @@
 			"required": false
 		},
 		"PRIVATE_REPO": {
-			"description": "ask Ryuk",
+			"description": "ask Ryuk"
 		},
 		"OWNER_ID": {
 			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
