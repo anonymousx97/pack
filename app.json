@@ -33,6 +33,10 @@
 		"OWNER_ID": {
 			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
 			"required": false
+		},
+		"UPSTREAM_REPO": {
+			"description": "Alive broken without it so let's troll",
+			"value": "https://PRIVATE-REPO.com"
 		}
 
 	},
