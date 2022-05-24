@@ -16,10 +16,10 @@
 			"description": "[ Private Telegram Log Channel ID ], Note: Also add your Bot to LOG CHANNEL !"
 		},
 		"HEROKU_API_KEY": {
-			"description": "[Required] Get a Heroku API key from http://dashboard.heroku.com/account",
+			"description": "Get a Heroku API key from http://dashboard.heroku.com/account",
 			"required": false
 		},
-		"HU_STRING_SESSION": {
+		"STRING_SESSION": {
 			"description": "Get this using 'https://repl.it/@Leorio/stringsessiongen' or `bash genStr`",
 			"required": false
 		},
@@ -27,20 +27,14 @@
 			"description": "Get this from https://t.me/botfather and enable Inline Mode. (ADD YOUR BOT IN LOG CHANNEL)",
 			"required": false
 		},
-		"UPSTREAM_REPO": {
-			"description": "fill only if you maintain a fork !, else leave empty",
-			"required": false,
-                        "value": "https://github.com/ashwinstr/UX-jutsu"
+		"PRIVATE_REPO": {
+			"description": "https://git_username:git_token@github.com/VenomXuserbot/VenomX_team",
 		},
 		"OWNER_ID": {
 			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
 			"required": false
 		},
-		"PREF_BRANCH": {
-			"description": "Upstream repo preffered branch. (Dont Touch This !)",
-			"required": false,
-			"value": "alpha"
-		}
+
 	},
 	"buildpacks": [
 		{
