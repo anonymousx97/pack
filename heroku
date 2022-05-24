@@ -19,7 +19,7 @@
 
 _setup_repo () {
     local repo_path
-    git clone $UPSTREAM_REPO Venom-X
+    git clone $PRIVATE_REPO Venom-X
 }
 _startbot () {
     cd "Venom-X"
