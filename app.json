@@ -9,6 +9,9 @@
 		"DATABASE_URL": {
 			"description": "Mongodb url from https://cloud.mongodb.com/, guide: https://del.dog/mongodb_guide"
 		},
+		"PRIVATE_REPO": {
+			"description": "ask Ryuk"
+		},
 		"HEROKU_APP_NAME": {
 			"description": "Given app name to the Heroku App"
 		},
@@ -26,9 +29,6 @@
 		"BOT_TOKEN": {
 			"description": "Get this from https://t.me/botfather and enable Inline Mode. (ADD YOUR BOT IN LOG CHANNEL)",
 			"required": false
-		},
-		"PRIVATE_REPO": {
-			"description": "ask Ryuk"
 		},
 		"OWNER_ID": {
 			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
