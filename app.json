@@ -9,9 +9,6 @@
 		"DATABASE_URL": {
 			"description": "Mongodb url from https://cloud.mongodb.com/, guide: https://del.dog/mongodb_guide"
 		},
-		"PRIVATE_REPO": {
-			"description": "https://git_username:git_token@github.com/VenomXuserbot/VenomX_team"
-		},
 		"HEROKU_APP_NAME": {
 			"description": "Given app name to the Heroku App"
 		},
@@ -20,10 +17,10 @@
 		},
 		"HEROKU_API_KEY": {
 			"description": "Get a Heroku API key from http://dashboard.heroku.com/account",
-			"required": false
+			"required": true
 		},
 		"STRING_SESSION": {
-			"description": "Get this using 'https://repl.it/@Leorio/stringsessiongen' or `bash genStr`",
+			"description": "Get this using Notes in ' https://t.me/UX_xplugin_support ' or `bash genStr`",
 			"required": false
 		},
 		"BOT_TOKEN": {
@@ -34,9 +31,13 @@
 			"description": "Your user_id(s) e.g 123456789 or mutiple ids",
 			"required": false
 		},
+		"PREF_BRANCH": {
+			"description": "Branch you want to use, Don't change unless you change Upstream repo",
+			"value": "main"
+		},
 		"UPSTREAM_REPO": {
-			"description": "Alive broken without it so let's troll",
-			"value": "https://PRIVATE-REPO.com"
+			"description": "Don't Change this unless you maintain your own Fork",
+			"value": "https://github.com/VenomXuserbot/VenomX"
 		}
 
 	},
@@ -44,14 +45,11 @@
 		{
 			"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
 		},
-		{ "url": "https://github.com/ashwinstr/heroku-buildpack-noto-cjk-fonts.git" },
 		{ "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab.git" },
 		{ "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip" },
 		{ "url": "https://github.com/ashwinstr/heroku-buildpack-google-chrome" },
 		{ "url": "https://github.com/ashwinstr/heroku-buildpack-chromedriver" },
-		{ "url": "https://github.com/chrismytton/heroku-buildpack-jq.git" },
 		{ "url": "https://github.com/justaprudev/heroku-buildpack-neofetch.git" },
 		{ "url": "https://github.com/dishapatel010/mediainfo_buildpack.git" },
-		{ "url": "heroku/python" }
 	]
 }
