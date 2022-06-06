@@ -17,7 +17,6 @@
 		},
 		"HEROKU_API_KEY": {
 			"description": "Get a Heroku API key from http://dashboard.heroku.com/account",
-			"required": true
 		},
 		"STRING_SESSION": {
 			"description": "Get this using Notes in ' https://t.me/UX_xplugin_support ' or `bash genStr`",
