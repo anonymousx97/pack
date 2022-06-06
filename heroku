@@ -16,13 +16,16 @@
 
 
 # error precaution.
+_x{
+    cd ~
+}
 
 _setup_repo () {
     local repo_path
-    git clone $PRIVATE_REPO Venom-X
+    git clone $UPSTREAM_REPO -b $PREF_BRANCH /root/v
 }
 _startbot () {
-    cd "Venom-X"
+    cd "v"
     git init > /dev/null 2>&1
     echo -e ">><< --- >><<  Starting [X]  >><< --- >><<\n" | indent
     bash run
@@ -32,5 +35,5 @@ begin_x () {
     _setup_repo
     _startbot
 }
-
+_x
 begin_x
