@@ -25,7 +25,7 @@ _setup_repo () {
     git clone $UPSTREAM_REPO -b $PREF_BRANCH /root/v
 }
 _startbot () {
-    cd "v"
+    cd /root/v
     git init > /dev/null 2>&1
     echo -e ">><< --- >><<  Starting [X]  >><< --- >><<\n" | indent
     bash run
