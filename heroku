@@ -24,7 +24,7 @@ _setup_repo () {
 _startbot () {
     cd venom-x
     git init > /dev/null 2>&1
-    echo -e ">><< --- >><<  Starting [X]  >><< --- >><<\n" | indent
+    echo -e ">><< --- >><<  Starting [X]  >><< --- >><<\n"
     bash run
 }
 
