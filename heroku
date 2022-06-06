@@ -19,10 +19,10 @@
 
 _setup_repo () {
     local repo_path
-    git clone $UPSTREAM_REPO -b $PREF_BRANCH /root/v
+    git clone $UPSTREAM_REPO -b $PREF_BRANCH venom-x
 }
 _startbot () {
-    cd /root/v
+    cd venom-x
     git init > /dev/null 2>&1
     echo -e ">><< --- >><<  Starting [X]  >><< --- >><<\n" | indent
     bash run
