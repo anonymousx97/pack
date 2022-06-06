@@ -16,9 +16,6 @@
 
 
 # error precaution.
-_x{
-    cd ~
-}
 
 _setup_repo () {
     local repo_path
@@ -35,5 +32,5 @@ begin_x () {
     _setup_repo
     _startbot
 }
-_x
+
 begin_x
